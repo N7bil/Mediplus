@@ -81,6 +81,41 @@ a{
     height: 100%;
     width: 100%;
 }
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    width: 450px;
+    border: 2px solid var(--maincolor);
+    background-color: #1463b1;
+    padding: 15px;
+    margin-top: 15px;
+    transform: scale(0);
+    transition: transform 0.5s , visibility .5s;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown:hover .dropdown-menu{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-menu ul{
+    display: table-cell;
+    text-align: left;
+}
+.dropdown-menu ul li:first-child a {
+    display: block;
+    margin-bottom: 10px;
+}
+.dropdown-menu ul li {
+    line-height: 1.7;
+}
+.dropdown-menu ul li a{
+    color: white;
+}
 /* //////////////////////////// */
 .slider{
     width: 100%;
@@ -467,6 +502,6 @@ footer .end-footer{
 .btn-0 a,.btn-01 a,.about-doctor,.btn-3 a,.services-logo:hover.services-logo i.btn-04 a,.btn-4:hover,.btn-4:hover a,.card h2,.card ul i,footer,.footer-left i,.btn-11 a,.category-1 .icon{
     color: white;
 }
-.btn-04,.btn-4:hover,.category-1 .icon,.services-logo:hover,.btn-0,.btn-01,.btn-2:hover,.about-doctor-1,.about-doctor .btn-3,.card,footer,.footer-right,.btn-11{
+.btn-04,.btn-4:hover,.category-1 .icon,.services-logo:hover,.btn-0,.btn-1,.btn-2:hover,.about-doctor-1,.about-doctor .btn-3,.card,footer,.footer-right,.btn-11{
     background-color: #1a76d1;
 }
