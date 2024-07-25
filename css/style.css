@@ -278,6 +278,9 @@ figure{
     margin-top: 40px;
     color: #1A76D1;
 }
+.services-logo:hover i{
+    color: white;   
+}
 .services-1 h2{
     font-size: 21px;
     font-weight: 600;
